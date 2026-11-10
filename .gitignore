@@ -1,0 +1,35 @@
+# Entornos virtuales y cachés
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Secretos y configuración por máquina
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.local.*
+
+# Pesos entrenados (privados, solo en el respaldo; no van a git)
+*.pt
+*.pth
+*.onnx
+*.engine
+*.ckpt
+*.safetensors
+
+# Salidas de entrenamiento (pesos + métricas por ejecución): pesadas y reproducibles
+runs/
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
